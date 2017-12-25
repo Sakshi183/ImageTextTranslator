@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/shivanshsharma/.android/build-cache/78e70e0d49f32ef595efe0b9c1c2f727cb9a3390/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
+        <dex dex="/Users/shivanshsharma/Desktop/ocr-reader/app/build/intermediates/pre-dexed/debug/classes_c6cc341decf528ca51338d4626fe57d86567d724.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shivanshsharma/.android/build-cache/b7294c50e222b0db3f03603548e752a2684b0eff/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
+        <dex dex="/Users/shivanshsharma/Desktop/ocr-reader/app/build/intermediates/pre-dexed/debug/classes_ad21f8d54d8ab37f585b3cede3c58549bbe15ae6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shivanshsharma/.android/build-cache/dbeaad078154d697e92ca02374e8bc5dcf959d47/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="670df81539ab71918d49b186598b7eff08ef6563">
+        <dex dex="/Users/shivanshsharma/Desktop/ocr-reader/app/build/intermediates/pre-dexed/debug/classes_337221b94c7c29ca470fcff70492981d235faf03.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shivanshsharma/.android/build-cache/53148bf0aa0d03f1ab3cf8863f62c3fc5a2d8f0b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="/Users/shivanshsharma/Desktop/ocr-reader/app/build/intermediates/pre-dexed/debug/classes_42d432df0290b205fa9ff78b3aeeecc3a15414ad.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,122 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:2:1-36:12
+	package
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:3:5-62
+		INJECTED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml
+	android:installLocation
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:4:5-35
+uses-feature#android.hardware.camera
+ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:6:5-60
+	android:name
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:6:19-57
+uses-permission#android.permission.CAMERA
+ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:8:5-65
+	android:name
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:8:22-62
+application
+ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:10:5-34:19
+MERGED from [com.google.android.gms:play-services-vision:9.4.0] /Users/shivanshsharma/.android/build-cache/dbeaad078154d697e92ca02374e8bc5dcf959d47/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base:9.4.0] /Users/shivanshsharma/.android/build-cache/b7294c50e222b0db3f03603548e752a2684b0eff/output/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/shivanshsharma/.android/build-cache/78e70e0d49f32ef595efe0b9c1c2f727cb9a3390/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/shivanshsharma/.android/build-cache/53148bf0aa0d03f1ab3cf8863f62c3fc5a2d8f0b/output/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:design:24.2.0] /Users/shivanshsharma/.android/build-cache/ad8b8b6b861d7799ca939cd2b440f031bf721cd0/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:24.2.0] /Users/shivanshsharma/.android/build-cache/16627fbe709bdf4ed90a4aa381c464731ee85270/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.0] /Users/shivanshsharma/.android/build-cache/7dfe85ee98bc82a6c0708132046d10695b03b165/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.0] /Users/shivanshsharma/.android/build-cache/9831afdf9aacd3a8020e56e664d3fed1a6ed5dc1/output/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:24.2.0] /Users/shivanshsharma/.android/build-cache/2c00d7d77dbcc13c83aef1db346e89503b59bb89/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.0] /Users/shivanshsharma/.android/build-cache/08f52f06241f47716ec81539f4f4122e57335a40/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.0] /Users/shivanshsharma/.android/build-cache/e38273aec0ee30d990776eeed2d46b6c1f52276e/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.0] /Users/shivanshsharma/.android/build-cache/37c88cf8e4920ac46cbf8c19ff236cb5e8e6cbd8/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.0] /Users/shivanshsharma/.android/build-cache/c4d6f53c298647bf03021e70a7a300c171d8e88e/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/shivanshsharma/.android/build-cache/ed532cb823cce389ba956540a141cf5039594d3a/output/AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:15:9-40
+	android:supportsRtl
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:16:9-37
+	android:hardwareAccelerated
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:13:9-43
+	android:fullBackupContent
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:12:9-42
+	android:allowBackup
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:11:9-35
+	android:icon
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:14:9-38
+	android:theme
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:17:9-47
+meta-data#com.google.android.gms.vision.DEPENDENCIES
+ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:18:9-20:35
+	android:value
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:20:13-32
+	android:name
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:19:13-70
+activity#com.google.android.gms.samples.vision.ocrreader.MainActivity
+ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:22:9-30:20
+	android:label
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:24:13-56
+	android:name
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:23:13-88
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:25:13-29:29
+action#android.intent.action.MAIN
+ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:28:17-77
+	android:name
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:28:27-74
+activity#com.google.android.gms.samples.vision.ocrreader.OcrCaptureActivity
+ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:32:9-33:41
+	android:label
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:33:13-38
+	android:name
+		ADDED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml:32:19-100
+uses-sdk
+INJECTED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.google.android.gms:play-services-vision:9.4.0] /Users/shivanshsharma/.android/build-cache/dbeaad078154d697e92ca02374e8bc5dcf959d47/output/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-base:9.4.0] /Users/shivanshsharma/.android/build-cache/b7294c50e222b0db3f03603548e752a2684b0eff/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/shivanshsharma/.android/build-cache/78e70e0d49f32ef595efe0b9c1c2f727cb9a3390/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/shivanshsharma/.android/build-cache/53148bf0aa0d03f1ab3cf8863f62c3fc5a2d8f0b/output/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:design:24.2.0] /Users/shivanshsharma/.android/build-cache/ad8b8b6b861d7799ca939cd2b440f031bf721cd0/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:24.2.0] /Users/shivanshsharma/.android/build-cache/16627fbe709bdf4ed90a4aa381c464731ee85270/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:24.2.0] /Users/shivanshsharma/.android/build-cache/7dfe85ee98bc82a6c0708132046d10695b03b165/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.2.0] /Users/shivanshsharma/.android/build-cache/9831afdf9aacd3a8020e56e664d3fed1a6ed5dc1/output/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-v4:24.2.0] /Users/shivanshsharma/.android/build-cache/2c00d7d77dbcc13c83aef1db346e89503b59bb89/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:24.2.0] /Users/shivanshsharma/.android/build-cache/08f52f06241f47716ec81539f4f4122e57335a40/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:24.2.0] /Users/shivanshsharma/.android/build-cache/e38273aec0ee30d990776eeed2d46b6c1f52276e/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-media-compat:24.2.0] /Users/shivanshsharma/.android/build-cache/37c88cf8e4920ac46cbf8c19ff236cb5e8e6cbd8/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:recyclerview-v7:24.2.0] /Users/shivanshsharma/.android/build-cache/9613cc35b6a691ff24adcf72cdb57efa0b0a2c87/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-ui:24.2.0] /Users/shivanshsharma/.android/build-cache/c4d6f53c298647bf03021e70a7a300c171d8e88e/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.0] /Users/shivanshsharma/.android/build-cache/ed532cb823cce389ba956540a141cf5039594d3a/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:24.2.0] /Users/shivanshsharma/.android/build-cache/16627fbe709bdf4ed90a4aa381c464731ee85270/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/shivanshsharma/Desktop/ocr-reader/app/src/main/AndroidManifest.xml
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/shivanshsharma/.android/build-cache/b7294c50e222b0db3f03603548e752a2684b0eff/output/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/shivanshsharma/.android/build-cache/b7294c50e222b0db3f03603548e752a2684b0eff/output/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/shivanshsharma/.android/build-cache/b7294c50e222b0db3f03603548e752a2684b0eff/output/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/shivanshsharma/.android/build-cache/b7294c50e222b0db3f03603548e752a2684b0eff/output/AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:9.4.0] /Users/shivanshsharma/.android/build-cache/53148bf0aa0d03f1ab3cf8863f62c3fc5a2d8f0b/output/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:9.4.0] /Users/shivanshsharma/.android/build-cache/53148bf0aa0d03f1ab3cf8863f62c3fc5a2d8f0b/output/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:9.4.0] /Users/shivanshsharma/.android/build-cache/53148bf0aa0d03f1ab3cf8863f62c3fc5a2d8f0b/output/AndroidManifest.xml:22:13-58
