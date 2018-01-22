@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.android.gms.samples.vision.ocrreader.test">
+    package="com.sakshi.android.ocrreader.test">
 
     <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="23" />
 
@@ -9,8 +9,8 @@
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.google.android.gms.samples.vision.ocrreader"
+                     android:targetPackage="com.sakshi.android.ocrreader"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for com.google.android.gms.samples.vision.ocrreader"/>
+                     android:label="Tests for com.sakshi.android.ocrreader"/>
 </manifest>

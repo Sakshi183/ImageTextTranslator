@@ -4,12 +4,12 @@
         "source": "/Users/shivanshsharma/.android/build-cache/b7294c50e222b0db3f03603548e752a2684b0eff/output/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_pressed.9.png"
     },
     {
-        "merged": "/Users/shivanshsharma/Desktop/ocr-reader/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_ic_star_black_36dp.png",
-        "source": "/Users/shivanshsharma/.android/build-cache/16627fbe709bdf4ed90a4aa381c464731ee85270/output/res/drawable-xxhdpi-v4/abc_ic_star_black_36dp.png"
-    },
-    {
         "merged": "/Users/shivanshsharma/Desktop/ocr-reader/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_000.png",
         "source": "/Users/shivanshsharma/.android/build-cache/16627fbe709bdf4ed90a4aa381c464731ee85270/output/res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/shivanshsharma/Desktop/ocr-reader/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_ic_star_black_36dp.png",
+        "source": "/Users/shivanshsharma/.android/build-cache/16627fbe709bdf4ed90a4aa381c464731ee85270/output/res/drawable-xxhdpi-v4/abc_ic_star_black_36dp.png"
     },
     {
         "merged": "/Users/shivanshsharma/Desktop/ocr-reader/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/common_plus_signin_btn_icon_light_normal.9.png",

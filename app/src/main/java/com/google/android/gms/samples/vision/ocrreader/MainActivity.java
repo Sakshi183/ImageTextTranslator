@@ -1,24 +1,11 @@
-/*
- * Copyright (C) The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 
 package com.google.android.gms.samples.vision.ocrreader;
 
-import android.content.Intent;
-import android.os.Bundle;
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.os.AsyncTask;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.CompoundButton;
@@ -26,11 +13,23 @@ import android.widget.TextView;
 
 import com.google.android.gms.common.api.CommonStatusCodes;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
 /**
  * Main activity demonstrating how to pass extra parameters to an activity that
  * recognizes text.
  */
 public class MainActivity extends Activity implements View.OnClickListener {
+    Context context=this;
 
     // Use a compound button so either checkbox or switch widgets work.
     private CompoundButton autoFocus;
@@ -103,6 +102,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     statusMessage.setText(R.string.ocr_success);
                     textValue.setText(text);
                     Log.d(TAG, "Text read: " + text);
+                    //Default variables for translation
+                    String textToBeTranslated = text;
+                    String languagePair = "en-hi"; //English to hindi
+                    //Executing the translation function
+                    Translate(textToBeTranslated,languagePair);
+
+
                 } else {
                     statusMessage.setText(R.string.ocr_failure);
                     Log.d(TAG, "No Text captured, intent data is null");
@@ -114,6 +120,94 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
         else {
             super.onActivityResult(requestCode, resultCode, data);
+        }
+    }
+    void Translate(String textToBeTranslated,String languagePair){
+        TranslatorBackgroundTask translatorBackgroundTask= new TranslatorBackgroundTask(context);
+        translatorBackgroundTask.execute(textToBeTranslated,languagePair); // Returns the translated text as a String
+        // Logs the result in Android Monitor
+    }
+    public class TranslatorBackgroundTask extends AsyncTask<String, Void, String> {
+        //Declare Context
+        Context ctx;
+        //Set Context
+        TranslatorBackgroundTask(Context ctx){
+            this.ctx = ctx;
+        }
+
+        @Override
+        protected String doInBackground(String... params) {
+            //String variables
+            String textToBeTranslated = params[0];
+            String languagePair = params[1];
+
+            String jsonString;
+
+            try {
+                //Set up the translation call URL
+                String yandexKey = "trnsl.1.1.20180122T183508Z.5047119391d3511b.db0631849ab1131a594785f7b7f23035bc8c355b";
+                String yandexUrl = "https://translate.yandex.net/api/v1.5/tr.json/translate?key=" + yandexKey
+                        + "&text=" + textToBeTranslated + "&lang=" + languagePair;
+                URL yandexTranslateURL = new URL(yandexUrl);
+
+                //Set Http Conncection, Input Stream, and Buffered Reader
+                HttpURLConnection httpJsonConnection = (HttpURLConnection) yandexTranslateURL.openConnection();
+                InputStream inputStream = httpJsonConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+
+                //Set string builder and insert retrieved JSON result into it
+                StringBuilder jsonStringBuilder = new StringBuilder();
+                while ((jsonString = bufferedReader.readLine()) != null) {
+                    jsonStringBuilder.append(jsonString + "\n");
+                }
+
+                //Close and disconnect
+                bufferedReader.close();
+                inputStream.close();
+                httpJsonConnection.disconnect();
+
+                //Making result human readable
+                String resultString = jsonStringBuilder.toString().trim();
+                //Getting the characters between [ and ]
+                resultString = resultString.substring(resultString.indexOf('[')+1);
+                resultString = resultString.substring(0,resultString.indexOf("]"));
+                //Getting the characters between " and "
+                resultString = resultString.substring(resultString.indexOf("\"")+1);
+                resultString = resultString.substring(0,resultString.indexOf("\""));
+
+                Log.d("Translation Result:", resultString);
+                return jsonStringBuilder.toString().trim();
+
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            try {
+                JSONObject baseJsonResponse = new JSONObject(result);
+                String url = baseJsonResponse.getString("text");
+                result = url.substring(2, url.length()-2);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            textValue.setText(result);
+
+        }
+
+        @Override
+        protected void onProgressUpdate(Void... values) {
+            super.onProgressUpdate(values);
+            //Log.d("Translation Result",values);
         }
     }
 }
